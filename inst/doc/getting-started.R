@@ -5,7 +5,7 @@ knitr::opts_chunk$set(message = FALSE)
 library(yfR)
 
 # set options for algorithm
-my_ticker <- 'FB'
+my_ticker <- 'GM'
 first_date <- Sys.Date() - 30
 last_date <- Sys.Date()
 
@@ -21,7 +21,7 @@ head(df_yf)
 library(yfR)
 library(ggplot2)
 
-my_ticker <- c('FB', 'GM', 'MMM')
+my_ticker <- c('TSLA', 'GM', 'MMM')
 first_date <- Sys.Date() - 100
 last_date <- Sys.Date()
 
@@ -35,7 +35,6 @@ p <- ggplot(df_yf_multiple, aes(x = ref_date, y = price_adjusted,
   geom_line()
 
 p
-
 
 ## -----------------------------------------------------------------------------
 library(yfR)
@@ -88,7 +87,7 @@ print(p)
 library(yfR)
 library(ggplot2)
 
-my_ticker <- c('FB', 'GM', 'MMM')
+my_ticker <- c('TSLA', 'GM', 'MMM')
 first_date <- Sys.Date() - 100
 last_date <- Sys.Date()
 
