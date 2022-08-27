@@ -1,7 +1,12 @@
+## Version 1.0.2 (2022-08-21) -- bug fixes
+
+- changed FB ticker to META
+- fixed bug in calculation of log accumulated returns
+- fixed bug in order of tickers (now it makes sure the ticker symbol is sorted)
+
 ## Version 1.0.1 (2022-08-15) -- bug fixes
 
 - fixed bug with FB ticker (change to TSLA)
-
 
 ## Version 1.0.0 (2022-06-22) -- CRAN SUBMISSION
 
