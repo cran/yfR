@@ -1,6 +1,6 @@
 Package: yfR
 Title: Downloads and Organizes Financial Data from Yahoo Finance
-Version: 1.0.2
+Version: 1.0.3
 Authors@R: c(person("Marcelo", "Perlin", email = "marceloperlin@gmail.com", role = c("aut", "cre")),
              person("Nic", "Crane", role = "rev",
                     comment = "Nic reviewed the package (v. 0.0.5) for 
@@ -25,7 +25,7 @@ VignetteBuilder: knitr
 Config/testthat/edition: 3
 Language: en-US
 NeedsCompilation: no
-Packaged: 2022-08-27 10:24:21 UTC; msperlin
+Packaged: 2022-10-31 11:51:19 UTC; msperlin
 Author: Marcelo Perlin [aut, cre],
   Nic Crane [rev] (Nic reviewed the package (v. 0.0.5) for rOpenSci, see
     <https://github.com/ropensci/software-review/issues/523>),
@@ -34,4 +34,4 @@ Author: Marcelo Perlin [aut, cre],
     <https://github.com/ropensci/software-review/issues/523>)
 Maintainer: Marcelo Perlin <marceloperlin@gmail.com>
 Repository: CRAN
-Date/Publication: 2022-08-27 13:20:02 UTC
+Date/Publication: 2022-10-31 19:30:13 UTC
