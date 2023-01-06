@@ -12,7 +12,7 @@
 
 <meta name="author" content="Marcelo Perlin" />
 
-<meta name="date" content="2022-11-18" />
+<meta name="date" content="2023-01-06" />
 
 <title>Using Collections</title>
 
@@ -340,7 +340,7 @@ code > span.er { color: #a61717; background-color: #e3d2d2; }
 
 <h1 class="title toc-ignore">Using Collections</h1>
 <h4 class="author">Marcelo Perlin</h4>
-<h4 class="date">2022-11-18</h4>
+<h4 class="date">2023-01-06</h4>
 
 
 
@@ -359,18 +359,19 @@ current composition of the SP500 index.</p>
 <pre><code>## ℹ SP500: The SP500 index (US MARKET) - Ticker = ^GSPC</code></pre>
 <pre><code>## ℹ IBOV: The Ibovespa index (BR MARKET) - Ticker = ^BVSP</code></pre>
 <pre><code>## ℹ FTSE: The FTSE index (UK MARKET) - Ticker = ^FTSE</code></pre>
+<pre><code>## ℹ DOW: The DOW index (US MARKET) - Ticker = ^DJI</code></pre>
 <pre><code>## ℹ testthat-collection: A (small) testing index for testthat() -- dev stuff, dont use it!</code></pre>
-<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>available_collections</span></code></pre></div>
+<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>available_collections</span></code></pre></div>
 <pre><code>## [1] &quot;SP500&quot;               &quot;IBOV&quot;                &quot;FTSE&quot;               
-## [4] &quot;testthat-collection&quot;</code></pre>
+## [4] &quot;DOW&quot;                 &quot;testthat-collection&quot;</code></pre>
 <p>One can download the composition of the collection with
 <code>yf_collection_get</code>:</p>
-<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(yfR)</span>
-<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="co"># be patient, it takes a while</span></span>
-<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>df_yf <span class="ot">&lt;-</span> <span class="fu">yf_collection_get</span>(<span class="st">&quot;SP500&quot;</span>)</span>
-<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(df_yf)</span></code></pre></div>
+<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(yfR)</span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="co"># be patient, it takes a while</span></span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>df_yf <span class="ot">&lt;-</span> <span class="fu">yf_collection_get</span>(<span class="st">&quot;SP500&quot;</span>)</span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(df_yf)</span></code></pre></div>
 </div>
 
 
