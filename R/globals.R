@@ -10,7 +10,12 @@ my_globals <- c(
   "EPIC", "Company", "Symbol", "Security",
   "GICS Sector", "ticker", "company", "sector",
   "time_groups", "first", "last",
-  "Ticker", "Industry", "Headquarters"
+  "Ticker", "Industry", "Headquarters",
+  # from yf_live_prices
+  "meta", "symbol", "regularMarketTime", "regularMarketPrice",
+  "time_stamp","previousClose","price","last_price",
+  # from yf_live_prices
+  "amount"
 )
 
 utils::globalVariables(my_globals)

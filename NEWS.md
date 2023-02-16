@@ -1,3 +1,10 @@
+## Version 1.1.0 (2023-01-30) -- major version
+
+- new function yf_live_prices() (see this [pr](https://github.com/ropensci/yfR/pull/24))
+- new function for fetching dividends (see this [PR](https://github.com/ropensci/yfR/pull/25)) 
+
+Thank you [Henrique](https://github.com/henrique1008) for the work in both, live prices and dividends! 
+
 ## Version 1.0.6 (2023-01-06) -- bug fixes and CRAN submission
 
 - fix for when user is requesting one trading day. Now it gives a warning and not an error -- [fixes #23](https://github.com/ropensci/yfR/issues/23)
